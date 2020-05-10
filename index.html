@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDaxYw5DcgsBWGL0-DxYVC0zM80D5pDQmE",
+    authDomain: "poll-3b972.firebaseapp.com",
+    databaseURL: "https://poll-3b972.firebaseio.com",
+    projectId: "poll-3b972",
+    storageBucket: "poll-3b972.appspot.com",
+    messagingSenderId: "238818947462",
+    appId: "1:238818947462:web:3db12e9a5bed5d79403c07"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div class="header">
+            <h1 id="header">
+                Kindly Vote to Select the next Chapter
+            </h1>
+        </div>
+        <center>
+            <div class="name">
+                <h1 id="input">
+                <input type="text" placeholder="Name" id="name">
+                </h1>
+            </div>
+        </center>
+        <div class="options">
+            <h1 id="options">
+            <button onclick="data()" id="data">
+            </button>
+            <button onclick="root()" id="root">
+            </button>
+            <button onclick="quad()" id="quad">
+            </button>
+            </h1>
+            <div class="choice-container">
+                <h1 id="choice">
+
+                </h1>
+            </div>
+        </div>
+        <div class="submit">
+            <h1 id="btn">
+            <button id="submit" >
+                Submit
+            </button>
+            </h1>
+        </div>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
